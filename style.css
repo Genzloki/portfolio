@@ -1,0 +1,147 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #080808;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Glass Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1a1a1a, #000);
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+}
+
+.neon-text {
+    color: #0ff;
+    text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+}
+
+/* Neon Button */
+.neon-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #ff00ff;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0 0 10px #ff00ff;
+    transition: 0.3s;
+}
+
+.neon-btn:hover {
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+/* Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 300px;
+    margin: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.portfolio-item:hover {
+    box-shadow: 0 0 15px #0ff;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Contact */
+.contact input, .contact textarea {
+    width: 80%;
+    max-width: 500px;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+.social-icons i {
+    margin: 10px;
+    color: white;
+}
